@@ -62,7 +62,7 @@ def factorial(a):
         print(1)
     else:
         print(math.factorial(a))
-option="13"
+option="16"
 while True:
     print("1. add")
     print("2. multiply")
