@@ -9,10 +9,7 @@ def multiply(a,b):
 def divide(a,b):
     a=float(a)
     b=float(b)
-    if b==0:
-        print("divide by zero error")
-    else:
-        print(a/b)
+    print(a/b)
 def subtract(a,b):
     a=float(a)
     b=float(b)
@@ -27,10 +24,7 @@ def square_root(a):
 def power(a,b):
     a=float(a)
     b=float(b)
-    if a==0 and b==0:
-        print("0 to the power of 0 is undefined")
-    else:
-        print(a**b)
+    print(a**b)
 def cos(a):
     a=float(a)
     print(math.cos(a))
@@ -71,6 +65,9 @@ def absolute_value(a):
         print(a*-1)
     else:
         print(a)
+def square(a):
+    a=float(a)
+    print(a**2)
 option="16"
 while True:
     print("1. add")
@@ -88,7 +85,8 @@ while True:
     print("13. factorial")
     print("14. absolute value")
     print("15. inverse")
-    print("16.exit")
+    print("16. square")
+    print("17.exit")
     option=input()
     if option=="1":
         a=input("enter number one: ")
@@ -142,8 +140,11 @@ while True:
     elif option=="15":
         a=input("enter number one: ")
         inverse(a)
-    elif  option=="16":
+    elif  option=="17":
         exit()
+    elif option=="18":
+        a=input("enter number one: ")
+        square(a)
     else:
         print("invalid operation")
     
