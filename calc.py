@@ -62,6 +62,15 @@ def factorial(a):
         print(1)
     else:
         print(math.factorial(a))
+def inverse(a):
+    a=float(a)
+    print(1/a)
+def absolute_value(a):
+    a=float(a)
+    if a<0:
+        print(a*-1)
+    else:
+        print(a)
 option="16"
 while True:
     print("1. add")
@@ -77,7 +86,9 @@ while True:
     print("11. log")
     print("12. random number generator")
     print("13. factorial")
-    print("14.exit")
+    print("14. absolute value")
+    print("15. inverse")
+    print("16.exit")
     option=input()
     if option=="1":
         a=input("enter number one: ")
@@ -125,7 +136,13 @@ while True:
     elif option=="13":
         a=input("enter the first number: ")
         factorial(a)
-    elif  option=="14":
+    elif option=="14":
+        a=input("enter number one: ")
+        absolute_value(a)
+    elif option=="15":
+        a=input("enter number one: ")
+        inverse(a)
+    elif  option=="16":
         exit()
     else:
         print("invalid operation")
